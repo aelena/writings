@@ -8,3 +8,4 @@ In no particular order
 - [My notes on Werner Vogels' 2025 AWS:reInvent keynote](./notes-vogel-aws24.md)
 - [On the project pre-mortem technique](./on-premortems.md)
 - [Guidance for adopting FOSS](./foss.md)
+- [Notes on the overreliance of organizations on consulting firms](./overreliance-consultancies.md)
