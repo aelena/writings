@@ -10,3 +10,4 @@ In no particular order
 - [Guidance for adopting FOSS](./foss.md)
 - [Notes on the overreliance of organizations on consulting firms](./overreliance-consultancies.md)
 - [Ashby's Law of Requisite Variety](./ashbys-law.md)
+- [Seven Biases That Can Kill Your Project](./seven-biases.md)
