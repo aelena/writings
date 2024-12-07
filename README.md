@@ -9,3 +9,4 @@ In no particular order
 - [On the project pre-mortem technique](./on-premortems.md)
 - [Guidance for adopting FOSS](./foss.md)
 - [Notes on the overreliance of organizations on consulting firms](./overreliance-consultancies.md)
+- [Ashby's Law of Requisite Variety](./ashbys-law.md)
