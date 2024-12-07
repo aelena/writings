@@ -1,4 +1,4 @@
-### My notes on Werner Vogel's AWS Reinvent Keynote
+### My notes on Werner Vogels' AWS Reinvent Keynote
 Werner's keynote is one of the events of the year for me. These are key points and ideas that I took from [this year's keynote](https://www.youtube.com/watch?v=aim5x73crbM). As usual, there is no shortage of interesting ideas, which some could seem obvious in retrospect. I allow myself the temerity to add some commentary on some of the ideas.
 
 ## Key Idea: Simplexity
