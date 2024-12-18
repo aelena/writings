@@ -71,6 +71,8 @@ Presents more moderate organizational risks:
 - Incomplete optimization of cloud capabilities
 - As with the previous approach, this one too risks perpetuating legacy issues in partially modernized systems that never fully modernize
 
+The [Independent Service Heuristics tool](https://github.com/TeamTopologies/Independent-Service-Heuristics) can come in handy in order to evaluate what part of the system could easily and cleanly be carved out. 
+
 ### Refactor/Re-architecture
 A comprehensive transformation where applications are significantly redesigned to fully leverage cloud-native architectures, typically involving microservices, containerization, and serverless technologies, but with the same codebase. Theoretically, best for mission-critical applications where performance, scalability, and innovation are paramount. Pros include maximum cloud efficiency, enhanced performance, improved scalability, and future-proofing. Cons include high complexity, substantial time investment, significant expertise requirements, and potentially high transformation costs.
 
@@ -143,7 +145,12 @@ Involves substituting existing applications with entirely new solutions that bet
 - High likelihood of disruptions in entrenched processes & constituencies
 - Needs leadership alignment and transparent communication to manage resistance and smooth transition
 
-## How to implement an encompassing cloud migration strategy
+## Considerations
+
+Before quickly deciding on a strategy because hype, vendor or [consultancy](./overreliance-consultancies.md) push and so on, evaluate your portfolio, or select parts of it that you are looking to do something about, with tools like the [Gartner TIME framework](https://www.leanix.net/en/wiki/apm/gartner-time-model) (TIME for Tolerate, Invest, Migrate, Eliminate) or any other IT portfolio management that gives you a systematic, structured and less subjective overview of the IT portfolio along dimensions such as technical health, technology lifecycles, business value, strategic alignment etc. There are other frameworks, many of which come from other companies that thrive from telling others what to do, such as [McKinsey's 7S framework](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/enduring-ideas-the-7-s-framework), the [BCG Growth Matrix](https://www.bcg.com/about/overview/our-history/growth-share-matrix), the [Application Rationalization Framework](https://www.leanix.net/en/wiki/apm/application-rationalization), [Application Portfolio Analysis (APA)](https://www.gartner.com/en/information-technology/glossary/application-portfolio-analysis), which, surprise suprise, is from Gartner too, or go heavy with [TOGAF](https://www.opengroup.org/togaf), but that is a different story and a different kind of endeavour. There are vendor agnostic approaches too, such as [MoSCoW](https://community.atlassian.com/t5/App-Central-articles/Understanding-the-MoSCoW-prioritization-How-to-implement-it-into/ba-p/2463999) that can be applied to IT portfolio management. 
+
+I am not selling or advocating for any specific tools from the ones cited. I believe they can provide useful guidance by indicating dimensions you should pay attention too, so can help guide your thinking. At the same time, many of those frameworks - especially those are not complicated to use like TOGAF - tend to the oversimplification of the world to 2x2 matrices. Use judiciously. There are entire books on the topic of IT portfolio management, so there are more details than can be captured in a simplistic matrix.
+
 To successfully navigate these migration approaches, organizations should:
 
 1. Develop a robust cloud competency center
