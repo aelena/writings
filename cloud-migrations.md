@@ -70,6 +70,7 @@ Presents more moderate organizational risks:
 - Risk of creating hybrid environments that are harder to manage (operationally, skills, as mentioned)
 - Incomplete optimization of cloud capabilities
 - As with the previous approach, this one too risks perpetuating legacy issues in partially modernized systems that never fully modernize
+- Inherent increased complexity of distributed systems
 
 The [Independent Service Heuristics tool](https://github.com/TeamTopologies/Independent-Service-Heuristics) can come in handy in order to evaluate what part of the system could easily and cleanly be carved out. 
 
@@ -137,6 +138,7 @@ This strategy carries the highest organizational risk due to its ambitious and c
 - Risk of creating more complex systems than the original application was, because of creep, new bugs created on top of the ones who were ported to the new system from the original, because there will be pressure to cut corners, "reuse" code and not change the processes too much
 - Nice opportunity to score some ESG points with your audience & investors and introduce green computing practices and a more sustainable or leaner architecture and cloud offerings
 - Requires focus on change management, communication and phased development to maintain organizational confidence and drive
+- Inherent increased complexity of distributed systems
 
 ### Replace
 Involves substituting existing applications with entirely new solutions that better meet business requirements. This might mean changing vendors or developing new custom applications that are more aligned with current business needs. Ideal for scenarios where existing applications are severely limited or where business processes have significantly evolved. Pros include opportunity for radical improvement, potential cost savings, and alignment with current business strategies. Cons include potential high initial investment, risk of business disruption, and challenges in data migration and user adaptation.
@@ -147,56 +149,44 @@ Involves substituting existing applications with entirely new solutions that bet
 
 ## Considerations
 
-Before quickly deciding on a strategy because hype, vendor or [consultancy](./overreliance-consultancies.md) push and so on, evaluate your portfolio, or select parts of it that you are looking to do something about, with tools like the [Gartner TIME framework](https://www.leanix.net/en/wiki/apm/gartner-time-model) (TIME for Tolerate, Invest, Migrate, Eliminate) or any other IT portfolio management that gives you a systematic, structured and less subjective overview of the IT portfolio along dimensions such as technical health, technology lifecycles, business value, strategic alignment etc. There are other frameworks, many of which come from other companies that thrive from telling others what to do, such as [McKinsey's 7S framework](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/enduring-ideas-the-7-s-framework), the [BCG Growth Matrix](https://www.bcg.com/about/overview/our-history/growth-share-matrix), the [Application Rationalization Framework](https://www.leanix.net/en/wiki/apm/application-rationalization), [Application Portfolio Analysis (APA)](https://www.gartner.com/en/information-technology/glossary/application-portfolio-analysis), which, surprise suprise, is from Gartner too, or go heavy with [TOGAF](https://www.opengroup.org/togaf), but that is a different story and a different kind of endeavour. There are vendor agnostic approaches too, such as [MoSCoW](https://community.atlassian.com/t5/App-Central-articles/Understanding-the-MoSCoW-prioritization-How-to-implement-it-into/ba-p/2463999) that can be applied to IT portfolio management. 
+### Build a systematic structured understanding of your IT Portfolio
+
+Before quickly deciding on a strategy because hype, vendor or [consultancy](./overreliance-consultancies.md) push and so on, evaluate your portfolio, or select parts of it that you are looking to do something about, with tools like the [Gartner TIME framework](https://www.leanix.net/en/wiki/apm/gartner-time-model) (TIME for Tolerate, Invest, Migrate, Eliminate) or any other IT portfolio management that gives you a systematic, structured and less subjective overview of the IT portfolio along dimensions such as technical health, technology lifecycles, business value, strategic alignment etc. There are other frameworks, many of which come from other companies that thrive from telling others what to do, such as [McKinsey's 7S framework](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/enduring-ideas-the-7-s-framework), the [BCG Growth Matrix](https://www.bcg.com/about/overview/our-history/growth-share-matrix), the [Application Rationalization Framework](https://www.leanix.net/en/wiki/apm/application-rationalization), [Application Portfolio Analysis (APA)](https://www.gartner.com/en/information-technology/glossary/application-portfolio-analysis), which, surprise suprise, is from Gartner too, or go heavy with [TOGAF](https://www.opengroup.org/togaf), but that is a different beast. There are vendor agnostic approaches too, such as [MoSCoW](https://community.atlassian.com/t5/App-Central-articles/Understanding-the-MoSCoW-prioritization-How-to-implement-it-into/ba-p/2463999) that can be applied to IT portfolio management. Simpler, more generalistic tools like [Impact-Effort Matrix](https://monday.com/blog/project-management/impact-effort-matrix/) or the [Kano Model](https://en.wikipedia.org/wiki/Kano_model) are also useful tools. There are endless [others](https://roadmunk.com/guides/product-prioritization-techniques-product-managers/).
 
 I am not selling or advocating for any specific tools from the ones cited. I believe they can provide useful guidance by indicating dimensions you should pay attention too, so can help guide your thinking. At the same time, many of those frameworks - especially those are not complicated to use like TOGAF - tend to the oversimplification of the world to 2x2 matrices. Use judiciously. There are entire books on the topic of IT portfolio management, so there are more details than can be captured in a simplistic matrix.
 
-To successfully navigate these migration approaches, organizations should:
+I hope you have an idea of your portfolio so when migration discussions arise, you can evaluate each application against business goals, technical health, and stakeholder needs based on grounded facts. Useful metrics here are business value, user impact, strategic/competitive advantage, technical debt, tech stack maturity, costs or process efficiency, scalability and cloud-readiness, growth etc.
 
-1. Develop a robust cloud competency center
-2. Invest heavily in continuous skills training
-3. Create detailed migration roadmaps with clear exit criteria
-4. Implement phased migration approaches
-5. Establish strong governance and architectural review boards
-6. Develop comprehensive change management programs
-7. Create fallback and rollback mechanisms
-8. Maintain open communication channels across IT and business units
+Ultimately the idea is to have a clear objective view and understanding of the IT Portfolio, so you can decide different migration roadmaps with clear exit criteria defined. Your EA principles should direct those, in line with business strategy and goals, establishing solid governance goalposts. The roadmaps will be showing how to implement phased migration approaches, that will probably be different for different applications. Do not forget about fallback and rollback mechanisms.
 
-Emerging Complexity Factors:
-- Increasing regulatory compliance requirements
-- Cybersecurity challenges
-- Multi-cloud and hybrid cloud environments
-- Rapid technological evolution
-- Increasing complexity of distributed systems
 
-Key Organizational Capabilities for Successful Migration:
-- Cloud architecture expertise
-- Strong change management practices
-- Continuous learning culture
-- Financial flexibility
+### Key Organizational Capabilities for Successful Migration:
+
 - Strategic technological vision
+- Cloud architecture expertise, do not overrely on vendors, build your own too, every company is a software company too
+- Constantly instill a continuous learning culture
+- Strong change management practices
+- Financial flexibility
 - Cross-functional collaboration
 - Risk management maturity
 
-Recommendation: Most organizations should start with Rehost or Re-Platform strategies to build cloud migration experience, then progressively move to more complex strategies like Refactor or Rebuild as organizational cloud maturity increases.
-
 ## Repatriation
 
-Cloud Repatriation or Edge/On-Premises Retention, sometimes referred to as "Cloud Exit" or "Cloud Repatriation" has gained some recent attention due to some famous articles. A Cloud Repatriation/Edge Retention Strategy involves either deliberately choosing to maintain on-premises infrastructure or moving workloads back from public cloud environments to private data centers or edge computing infrastructure. It's a strategic counterpoint to the widespread cloud migration trend, acknowledging that cloud isn't always the optimal solution for every technological context, in spite of the hype and the bandwagon effect.
+[Cloud Repatriation](https://www.puppet.com/blog/cloud-repatriation) has gained some recent attention due to [some famous articles](https://basecamp.com/cloud-exit). A Cloud Repatriation/Edge Retention Strategy involves either deliberately choosing to maintain on-premises infrastructure or moving workloads back from public cloud environments to private data centers or edge computing infrastructure. It's a strategic stance "against" the widespread cloud migration trend, acknowledging that cloud isn't always the optimal solution for every technological context, in spite of the hype and the bandwagon effect.
 
 Ideal candidates for this strategy include organizations with specific regulatory constraints, high-performance computing requirements, predictable and stable workloads, sensitive data processing needs, or those experiencing unexpectedly high public cloud operational costs. Industries like financial services, healthcare, government, scientific research, and certain manufacturing sectors often find compelling reasons to retain or repatriate infrastructure.
 
 Pros:
-- Complete control over infrastructure and data sovereignty
+- Complete control over infrastructure and data sovereignty - there are many ways to build mixed / hybrid architectures where some relevant data resides on-premises while you still run other workloads in the cloud and use on-prem gateways to connect the two worlds. This model applies as well to the Re-platform model where some parts or data can remain on-prem while other parts of the system move to the cloud, complexity notwithstanding.
 - Predictable, potentially lower long-term operational costs - at least you are reducing your exposure to unilateral prices / licenses increases in exchange for not offloading that much responsibility to the vendor
-- Enhanced security for sensitive workloads
 - Elimination of cloud vendor dependencies
 - Precise performance tuning capabilities
 - No recurring cloud service expenses
 - Compliance with strict regulatory environments
 - Reduced network latency for specific compute-intensive applications
-- Full customization of hardware and network configurations
-
+- Full customization of hardware and network configurations, but slower provisioning of new infrastructure for which lifecycle now you have to be responsible
+- Open to debate whether the security for sensitive workloads stands in a repatriation effort
+  
 Cons:
 - Significant upfront capital expenditure
 - Requires sophisticated internal IT infrastructure expertise
@@ -208,38 +198,40 @@ Cons:
 - Manual scaling and capacity planning
 - Higher energy and cooling infrastructure investments
 
-Organizational Constraints and Challenges:
-1. Skill Set Requirements
-- Demands highly specialized infrastructure engineering talent
-- Requires continuous training in evolving hardware technologies
+
+### Organizational Constraints and Challenges for Repatriation
+__Skill Set Requirements__
+- Demands specialized infrastructure engineering talent
+- Requires continuous training, but just like mostly everything else today (think AI for non-IT employees)
 - Needs comprehensive understanding of capacity planning
 - Demands advanced networking and security expertise
+- Forgotten skills like Hardware in general
 
-2. Financial Considerations
+__Financial Considerations__
 - Substantial initial and ongoing capital expenditures
 - Complex total cost of ownership calculations
 - Need for precise workload forecasting
 - Investment in redundancy and disaster recovery infrastructure
 
-3. Technological Constraints
-- Limited access to rapid technological innovation
+__Technological Constraints__
+- Limited access to rapid technological innovation - only mature and tech-savvy engineering organizations will be able keep up the pace
 - Manual management of hardware refresh cycles
 - Reduced flexibility in scaling computational resources
 - Higher complexity in distributed computing scenarios
 
-4. Operational Challenges
+__Operational Challenges__
 - 24/7 infrastructure management responsibilities
 - Complex compliance and security maintenance
 - Higher overhead for monitoring and maintenance
 - Limited global distribution capabilities
 
-5. Performance and Scalability Limitations
+__Performance and Scalability Limitations__
 - Fixed computational capacity
 - Manual resource allocation
 - Potential underutilization during low-demand periods
 - Increased complexity in dynamic workload management
 
-Risk Mitigation Strategies:
+### Risk Mitigation Strategies for Repatriation:
 - Develop comprehensive workload analysis frameworks
 - Implement hybrid infrastructure approaches
 - Create flexible, modular infrastructure designs
@@ -255,7 +247,7 @@ Emerging Trends Supporting On-Premises/Edge Retention:
 - Growth of software-defined infrastructure approaches
 - Enhanced virtualization and containerization technologies
 
-Decision Criteria for Repatriation:
+### Decision Criteria for Repatriation:
 1. Consistent, predictable workload characteristics
 2. Regulatory compliance requirements
 3. High-performance computing needs
