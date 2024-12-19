@@ -6,6 +6,18 @@ It's probably due to the necessarily distorted view from my own experience, but 
 
 Many of these biases actually overlap and / or present themselves in varying combinations. This is only an attempt to very simply enumerate and describe them with the goal of awareness, more than trying to quantifiable trying to understand these barriers or filters, since they often operate in autopilot without us being aware. I did not include as well other factors that do not fall into the specific conceptual category of the cognitive, such as the motivational or the emotional which, while having an impact on decision-making and problem solving, are distinct categories. Some barriers, though, while cognitive in nature are very much influenced by the cultural (as in organizational culture) environment.  
 
+## Baseline definitions
+
+The distinction between between what is a bias and a cognitive barrier can sometimes blur, especially when cognitive phenomena begin to directly interfere with a person's ability to process information, adapt, or make decisions effectively. For example, is the Dunning-Kruger Effect (or its converse, the imposter syndrome) a bias or a barrier that impedes knowledge formation and other superior cognitive skills in the individual?
+
+Let's stick to some definitions then:
+
+A cognitive barrier is an obstacle that impedes thinking, understanding, or decision-making. It is often a limitation or restriction in cognitive processing that hinders performance or clarity, an obstacle to optimal cognitive functioning and operation. Cann arise from lack of information, complexity, mental overload, or other external or internal factors such as background and, well, biases. Biases can be said to be the way cognitive barriers operate. 
+
+On the other hand, a cognitive bias can be defined as a systematic deviation from rationality or objective thinking. It reflects how people’s judgments and decisions are influenced by inherent mental shortcuts or heuristics. This is why  biases are persistent tendencies that can and do appear even in optimal conditions.
+
+## Categories
+
 #### 1. **Perceptual Filters**
    - **Mental Filters**: Tendency to interpret information through pre-existing beliefs or frames, distorting weak signals or ignoring dissonant data (as in [cognitive dissonance](https://en.wikipedia.org/wiki/Cognitive_dissonance)). 
    - **Selective Attention**: Focusing on certain stimuli while ignoring others, often unconsciously filtering important but subtle cues. There are many reasons why this can happen.
@@ -58,7 +70,7 @@ Many of these biases actually overlap and / or present themselves in varying com
    - **Present Bias**: Valuing immediate rewards over long-term benefits, leading to short-sighted decisions.  
    - **Framing Effect**: refers to how decision-making is heavily influenced by how information is presented (e.g., as a gain vs. a loss), even when the underlying facts remain unchanged. Something which the skillful communicator can manage to its own advantage to sell something or to manage up.
    - **Sunk Cost Fallacy**: Continuing an action because of previously invested resources, despite its diminishing value. Somewhat related to a more emotional **endowment effect**.
-   - **Planning Fallacy**: the very well-known tendency to underestimate the time, costs, and risks of future tasks while overestimating the benefits and likelihood of success. I guess we could also call it **best-case scenarios bias**. This fallacy is often helped by sales or pre-sales overpromising on the miracles of some technology as well as by our tendency to ignore historical precedence, complexity and ambiguity in systems and a bias towards brushing problems under the carpet for fear of being perceived as "negative" 
+   - **Planning Fallacy**: the very well-known tendency to underestimate the time, costs, and risks of future tasks while overestimating the benefits and likelihood of success. I guess we could also call it **best-case scenarios bias**. This fallacy is often helped by sales or pre-sales overpromising on the miracles of some technology as well as by our tendency to ignore historical precedence, complexity and ambiguity in systems and a bias towards brushing problems under the carpet for fear of being perceived as "negative". It acts as a cognitive barrier by distorting planning processes and limiting foresight in project management.
 
 #### 9. **Knowledge and Skill Gaps**
    - **Illusion of Competence**: Overestimating one’s skills due to a lack of self-awareness or proper feedback. It tends to create or reinforce a cognitive barrier to learning and collaboration by leading individuals to overestimate their ability, reducing their receptiveness to feedback. This is dangerous when key decision-makers or key stakeholders ignore critical feedback or dissonant data that is relevant. As such it can belong in the **Mental Rigidity and Cognitive Shortcuts** category too.
