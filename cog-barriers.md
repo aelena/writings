@@ -75,7 +75,7 @@ On the other hand, a cognitive bias can be defined as a systematic deviation fro
 #### 9. **Knowledge and Skill Gaps**
    - **Illusion of Competence**: Overestimating one’s skills due to a lack of self-awareness or proper feedback. It tends to create or reinforce a cognitive barrier to learning and collaboration by leading individuals to overestimate their ability, reducing their receptiveness to feedback. This is dangerous when key decision-makers or key stakeholders ignore critical feedback or dissonant data that is relevant. As such it can belong in the **Mental Rigidity and Cognitive Shortcuts** category too.
    - **Illusion of Understanding**: we often believe we understand how things work more deeply than we really do. This is the old saying that goes something like "if you cannot explain it to a child, you have not really understood it". often appears together with the **Hindsight Bias** and is also similar to **Illusion of Validity**
-   - **Dunning-Kruger Effect**: Incompetent individuals fail to recognize their lack of skill, while experts may underestimate their own abilities.  
+   - **Dunning-Kruger Effect**: Incompetent individuals fail to recognize their lack of skill, while experts may underestimate their own abilities. It often becomes a barrier as it obstructs the individual's ability to learn, adapt, or seek constructive feedback, effectively making them "deaf" to signals that contradict their inflated self-assessment. This lack of awareness becomes a cognitive blocker, trapping individuals in a self-reinforcing loop of poor judgment and low learning capacity in spite of reality offering valuable lessons.
 
 ---
 
