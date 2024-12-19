@@ -28,7 +28,7 @@ On the other hand, a cognitive bias can be defined as a systematic deviation fro
 
 #### 2. **Biases and Errors in Judgment**
    - **Overconfidence Bias**: The tendency to overestimate one’s knowledge, abilities, or beliefs. The well-known [Dunning–Kruger effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect), more on that later here.
-   - **Confirmation Bias**: Seeking, interpreting, or remembering information in a way that supports pre-existing views while ignoring contrary evidence.  
+   - **Preference for Confirming Evidence** / **Confirmation Bias**: Seeking, interpreting, or remembering information in a way that supports pre-existing views while ignoring contrary evidence. Also, rejecting disconfirming evidence. This bias can become an effective barrier to new knowledge. 
    - **Anchoring Bias**: Relying too heavily on the first piece of information received (the "anchor") when making decisions. Can be motivated by a need to save face due to some quick decision too early on.  
    - **Availability Heuristic**: Judging the probability of events based on their ease of recall, which may lead to distorted conclusions.  
    - **Representativeness Heuristic**: Making assumptions based on stereotypes or similarities, ignoring base rates or statistical probabilities.  
