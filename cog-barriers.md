@@ -46,8 +46,7 @@ On the other hand, a cognitive bias can be defined as a systematic deviation fro
 #### 4. **Social and Organizational Barriers**
    - **Groupthink**: The desire for consensus overrides critical analysis, leading individuals to align with majority views and suppress dissent.  
    - **Authority Bias**: Placing undue weight on the opinions or decisions of authority figures, even when flawed ([hippos](https://www.capterra.com/glossary/hippo-highest-paid-persons-opinion-highest-paid-person-in-the-office/) etc.)
-   - **Conformity Bias**: Tendency to follow group norms or behavior, often driven by social acceptance rather than independent reasoning.  
-   - **Pluralistic Ignorance**: When individuals privately disagree with a norm but go along with it because they assume others agree.
+   - **Conformity Bias**: Tendency to follow group norms or behavior, often driven by social acceptance rather than independent reasoning. The pressure towards conformity can become in fact a formidable barrier to cognitive skills, especially if combined with an environment lacking in psychological safety. A variation can be that of **Pluralistic Ignorance**, where individuals privately disagree with a norm but go along with it because they assume others agree (it often leads to people seeking workarounds, circumventions or subverting the process).
    - **Halo effect**: a single positive trait disproportionately influences overall perception, the perception of other unrelated traits or tends to dismiss risks or other negative traits. Can be related to [FOMO](https://en.wikipedia.org/wiki/Fear_of_missing_out) in technology adoption and decisions.
 
 #### 5. **Mental Rigidity and Cognitive Shortcuts**
