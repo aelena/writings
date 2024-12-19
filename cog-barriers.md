@@ -61,7 +61,7 @@ Many of these biases actually overlap and / or present themselves in varying com
    - **Planning Fallacy**: the very well-known tendency to underestimate the time, costs, and risks of future tasks while overestimating the benefits and likelihood of success. I guess we could also call it **best-case scenarios bias**. This fallacy is often helped by sales or pre-sales overpromising on the miracles of some technology as well as by our tendency to ignore historical precedence, complexity and ambiguity in systems and a bias towards brushing problems under the carpet for fear of being perceived as "negative" 
 
 #### 9. **Knowledge and Skill Gaps**
-   - **Illusion of Competence**: Overestimating one’s skills due to a lack of self-awareness or proper feedback.
+   - **Illusion of Competence**: Overestimating one’s skills due to a lack of self-awareness or proper feedback. It tends to create or reinforce a cognitive barrier to learning and collaboration by leading individuals to overestimate their ability, reducing their receptiveness to feedback. This is dangerous when key decision-makers or key stakeholders ignore critical feedback or dissonant data that is relevant. As such it can belong in the **Mental Rigidity and Cognitive Shortcuts** category too.
    - **Illusion of Understanding**: we often believe we understand how things work more deeply than we really do. This is the old saying that goes something like "if you cannot explain it to a child, you have not really understood it". often appears together with the **Hindsight Bias** and is also similar to **Illusion of Validity**
    - **Dunning-Kruger Effect**: Incompetent individuals fail to recognize their lack of skill, while experts may underestimate their own abilities.  
 
