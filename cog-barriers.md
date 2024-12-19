@@ -81,6 +81,7 @@ On the other hand, a cognitive bias can be defined as a systematic deviation fro
 
 ## Papers and readings
 
+- [A Task-Based Taxonomy of Cognitive Biases for Information Visualization](https://www.semanticscholar.org/paper/A-Task-Based-Taxonomy-of-Cognitive-Biases-for-Dimara-Franconeri/b2e9f35d60b00c7319a6763a477857e5215082f5) - quite an interesting paper covering proposing 154 cognitive biases organized in 7 main categories, more than I could possibly cover here, since I wanted to maintain a focus on barriers mostly. While the paper focuses on how these biases affect or are relevant for data visualization, the biases apply all the same to knowledge-intensive work. I can imagine a CoPilot assistant that sits with you hovering over your cognitive work and alerting you to these biases appearing and to the barriers you could be operating under without much awareness.
 - [Cognition in Software Engineering - A Taxonomy and Survey of a Half-Century of Research](https://www.semanticscholar.org/paper/Cognition-in-Software-Engineering%3A-A-Taxonomy-and-a-Fagerholm-Felderer/37f32619cc4992078c1a45983eb3195f13b831e0)
 - [Bloom’s taxonomy of cognitive learning objectives](https://www.semanticscholar.org/paper/Bloom's-taxonomy-of-cognitive-learning-objectives.-Adams/8e2ca9fb5e8c0383966351650fa11771c6bf5873)
 
