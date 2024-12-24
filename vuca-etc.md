@@ -58,11 +58,11 @@ This is the part that feels like pontificating. Entire books are written - and c
 - https://www.vuca-world.org/
 - https://www.vuca-world.org/vuca-bani-rupt-tuna/
 - https://www.ccl.org/
-- Strategic Reframing: The Oxford Scenario Planning Approach
-- Leadership Bandwidth: Navigating D-VUCAD
-- Strategies for Resilience in a Dynamic World: from VUCA to BANI
-- Navigating Disruption With RUPT: An Alternative to VUCA
-- Radical Leadership in Radical Times 
-- You Say VUCA, I Say TUNA: How Oxford Helps Leaders Face The Complex And Uncertain Future
-- Antifragile
+- [Strategic Reframing: The Oxford Scenario Planning Approach](https://academic.oup.com/book/9616?login=false)
+- [Leadership Bandwidth: Navigating D-VUCAD](https://gonailitscaleit.com/2024/05/11/leadership-bandwidth-navigating-the-d-vucad/)
+- [Strategies for Resilience in a Dynamic World: from VUCA to BANI](https://www.researchgate.net/publication/378845768_Strategies_for_Resilience_in_a_Dynamic_World_from_VUCA_to_BANI)
+- [Navigating Disruption With RUPT: An Alternative to VUCA](https://www.ccl.org/articles/leading-effectively-articles/navigating-disruption-vuca-alternative/)
+- [Radical Leadership in Radical Times](https://www.vuca-world.org/radical-leadership-in-radical-times/)
+- [You Say VUCA, I Say TUNA: How Oxford Helps Leaders Face The Complex And Uncertain Future](https://www.forbes.com/sites/adamgordon/2016/04/06/oxford/)
+- [Antifragile](https://en.wikipedia.org/wiki/Antifragile_(book))
 
