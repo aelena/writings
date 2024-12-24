@@ -5,6 +5,7 @@ I will be adding both new stuff as well as things from the archives.
 ## List
 In no particular order
 
+- [VUCA, BANI etc](./vuca-etc.md)
 - [The Big Rewrite](./big-rewrite.md)
 - [Cognitive Barriers](./cog-barriers.md)
 - [My notes on Werner Vogels' 2025 AWS:reInvent keynote](./notes-vogel-aws24.md)
