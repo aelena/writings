@@ -67,3 +67,21 @@ These are some of the notes and ideas that resonated with me. I recommend, howev
 - "You want a company that's as large as necessary to do the job well, but to be as small as possible."
 
 - "Strategy is not words, strategy is action. We don’t do a periodic planning system. The reason for that is because the world is a living, breathing thing. We just plan continuously. There’s no five-year plan."
+
+
+
+## Other articles commenting the book 
+
+You might find these useful to complement these quick notes, short of reading the book yourself. 
+
+- https://www.linkedin.com/pulse/working-nvidia-way-dror-poleg-pkk0e
+
+- https://www.linkedin.com/pulse/ces-required-reading-nvidia-way-roger-c-lanctot-pegje
+
+- https://www.linkedin.com/pulse/tae-kims-nvidia-way-marvin-vista-tnkwc
+
+- https://www.linkedin.com/pulse/nvidia-way-must-read-aspiring-entrepreneurs-samuel-antony-raj-a-inrff
+
+- https://www.linkedin.com/pulse/nvidia-way-reveals-how-chipmaker-dominating-tech-world-larry-walsh-fdtie
+
+- https://www.linkedin.com/pulse/story-nvidia-masterclass-long-term-vision-relentless-innovation-zhu-ruuse
