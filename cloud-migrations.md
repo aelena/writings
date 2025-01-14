@@ -34,8 +34,6 @@ This approach involves moving applications to the cloud with minimal modificatio
 
 It's probably something not done massively anymore in 2024, unless you are still closing datacenters , or perhaps incorporating new pieces after an M&A deal, and it is the less mature option in a cloud journey. It can also be a trap from which it is difficult to move out later. Once you are "in the cloud", business stakeholders might be already expecting the miracles of technology to manifest, and there can be less appetite for continuing the journey towards cloud-native modernizations.
 
-Tools like AWS Server Migration Service (SMS) or Azure Migrate can help here.
-
 To sum up:
 - Minimal immediate skill transformation needed, especially if a vendor is handholding you
 - Quickest migration path, ideal if you need to meet tight deadlines to tell your stakeholders, investors etc that "you are in the cloud"
@@ -138,8 +136,14 @@ Involves substituting existing applications with entirely new solutions that bet
 - High likelihood of disruptions in entrenched processes & constituencies
 - Needs leadership alignment and transparent communication to manage resistance and smooth transition
 
-## How to implement an encompassing cloud migration strategy
-To successfully navigate these migration approaches, organizations should:
+## Basic decision tree
+
+Necessarily basic...
+
+![cloud migration decision tree](./assets/imgs/cloud-migrate.drawio.png)
+
+## Considerations
+To successfully navigate these migration approaches, organizations should consider the following
 
 1. Develop a robust cloud & architecture competency centers
 2. Invest heavily in continuous skills training
@@ -169,17 +173,17 @@ __Build Key Organizational Capabilities for Successful Migration__:
 - Cross-functional collaboration
 - Risk management maturity
 
-Recommendation: Most organizations should start with Rehost or Re-Platform strategies to build cloud migration experience, then progressively move to more complex strategies like Refactor or Rebuild as organizational cloud maturity increases.
+Most organizations should start with Rehost or Re-Platform strategies to build cloud migration experience, then progressively move to more complex strategies like Refactor or Rebuild as organizational cloud maturity increases.
 
 
-## A note on Cloud Repatriation:
+## A note on Cloud Repatriation
 We've discussed moving to the cloud, but sometimes the reverse trip could be necessary. So-called [Cloud Repatriation](https://www.puppet.com/blog/cloud-repatriation) / Edge retention has gained some recent attention due to [some famous articles](https://basecamp.com/cloud-exit). This approach involves either deliberately choosing to maintain on-premises infrastructure or [moving workloads back](https://www.eetimes.eu/cloud-repatriation-on-the-rise-83-of-cios-plan-workload-shifts-in-2024/) from public cloud environments to private data centers or edge computing infrastructure. It's a strategic counterpoint to the widespread cloud migration narrative, acknowledging that cloud isn't always the optimal solution for every technological context.
 
 __Organizational Scenarios of Applicability__
 Ideal candidates for this strategy include organizations with specific regulatory constraints, high-performance computing requirements, predictable and stable workloads, sensitive data processing needs, or those experiencing unexpectedly high public cloud operational costs. Industries like financial services, healthcare, government, scientific research, and certain manufacturing sectors often find compelling reasons to retain or repatriate infrastructure.
 
 
-__Pros__:
+__Pros__
 - Complete control over infrastructure and data sovereignty - there are many ways to build mixed / hybrid architectures where some relevant data resides on-premises while you still run other workloads in the cloud and use on-prem gateways to connect the two worlds. This model applies as well to the Re-platform model where some parts or data can remain on-prem while other parts of the system move to the cloud, complexity notwithstanding.
 - Predictable, potentially lower long-term operational costs - at least you are reducing your exposure to unilateral prices / licenses increases in exchange for not offloading that much responsibility to the vendor
 - Elimination of cloud vendor dependencies
@@ -190,7 +194,7 @@ __Pros__:
 - Full customization of hardware and network configurations, but slower provisioning of new infrastructure for which lifecycle now you have to be responsible
 - Open to debate whether the security for sensitive workloads stands in a repatriation effort
 
-__Cons__:
+__Cons__
 - Significant upfront capital expenditure
 - Requires sophisticated internal IT infrastructure expertise
 - Ongoing maintenance and refresh responsibilities
