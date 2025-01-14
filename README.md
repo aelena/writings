@@ -14,3 +14,4 @@ In no particular order
 - [Notes on the overreliance of organizations on consulting firms](./overreliance-consultancies.md)
 - [Ashby's Law of Requisite Variety](./ashbys-law.md)
 - [Seven Biases That Can Kill Your Project](./seven-biases.md)
+- [Notes on the book, The Nvidia way](./notes-nvidia-way.md)
