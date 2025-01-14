@@ -25,14 +25,51 @@ I am not selling or advocating for any specific tools from the ones cited. Vendo
 What matters here is that you employ an objective and comprehensive methodologies for articulating and communicating decisions. Or, you adopt a Portfolio Management tool. Ultimately the idea is to have a clear objective view and understanding of the IT Portfolio, so you can decide different migration roadmaps with clear exit criteria defined. Your EA principles should direct those, in line with business strategy and goals, establishing solid governance goalposts. The roadmaps will be showing how to implement phased migration approaches, that will probably be different for different applications. 
 Anyway, this article is not about this topic.
 
-__Note__: I realize this is hardly a new thing, so I will try to explore as well the organizational ramifications for each strategy that I think should be taken into account, and not merely explain the strategies. 
+### Before we begin
+A basic taxonomy to be clear on the terms
+
+### **Cloud-Native**
+
+-   Applications built specifically to maximize the capabilities of cloud environments, leveraging **microservices architecture** for modularity, scalability, and independent development.
+-   **API-first design** ensures seamless integration and interoperability, enabling applications to consume and provide services efficiently.
+-   Incorporates **serverless architectures** (e.g., AWS Lambda, Azure Functions) and containerization (e.g., Docker, Kubernetes) to optimize resource utilization and scalability.
+-   Emphasizes **statelessness** and distributed systems design, enabling seamless scaling and high availability across geographic regions.
+-   Designed with **continuous delivery (CD)** in mind, allowing for rapid iteration and deployment cycles.
+
+
+### **Cloud-Resilient**
+
+-   Focused on creating **fault-tolerant systems** that maintain operational integrity during component failures or disruptions.
+-   Employs **resilient design principles**, such as redundancy, automated failover mechanisms, and self-healing capabilities.
+-   Supports **cloud-agnostic runtime integration**, enabling portability across multiple cloud platforms without vendor lock-in.
+-   Embeds **proactive monitoring and bundled metrics**, offering real-time performance insights and issue detection.
+-   Practices **chaos engineering** and **proactive failure testing** to simulate disruptions, identify weaknesses, and build resilience against outages.
+
+### **Cloud-Friendly**
+
+-   Adopts the **12-factor application methodology**, which emphasizes principles like environment parity, configuration as code, and dependency isolation.
+-   Designed for **horizontal scalability**, allowing for dynamic addition or removal of resources based on workload demands.
+-   Leverages **platform-managed services** (e.g., load balancers, managed databases) to simplify operations and enhance reliability.
+-   Optimized for **high availability** by taking advantage of built-in cloud platform features, such as regional redundancy and auto-scaling groups.
+
+### **Cloud-Ready**
+
+-   Applications exhibit minimal dependency on physical infrastructure, with **no reliance on permanent disk access**, ensuring flexibility for cloud environments.
+-   **Self-contained applications** are designed with all required dependencies bundled, reducing setup complexity and improving portability.
+-   Rely on **platform-managed ports and networking**, enabling seamless connectivity and load distribution within cloud ecosystems.
+-   Built to leverage **platform-managed backing services**, such as managed storage, caching, and messaging solutions, reducing the burden of maintaining underlying infrastructure.
+-   Positioned as candidates for cloud migration, often requiring minimal rework or reconfiguration to operate effectively in a cloud environment.
+
 
 ## Exploring the strategies
+
+__Note__: I realize this is hardly a new thing, so I will try to explore as well the organizational ramifications for each strategy that I think should be taken into account, and not merely explain the strategies. 
+
 
 ### __Rehost (Lift and Shift)__ 
 This approach involves moving applications to the cloud with minimal modifications. It's the quickest and least complicated (which does not necessarily mean simple or not time consuming) migration method, essentially transferring existing servers and applications to cloud infrastructure without changing the code. Normally this means just shifting the workload to a replica of the on-premises environment to vanilla VM-based IaaS. You could containerize those workloads, but ultimately they remain the same under the hood. This approach can be suitable for organizations with time-sensitive migration needs, limited cloud expertise, a large portfolio that precludes a comprehensive cloud journey to PaaS, or applications that don't need or require immediate optimizations. Pros include a faster migration, minimal disruption, and lower immediate transformation costs and risks. Cons include missed opportunities for cloud-native optimization, potentially higher long-term operational costs (that many VMs) due to the large IaaS footprint, and limited scalability. 
 
-It's probably something not done massively anymore in 2024, unless you are still closing datacenters , or perhaps incorporating new pieces after an M&A deal, and it is the less mature option in a cloud journey. It can also be a trap from which it is difficult to move out later. Once you are "in the cloud", business stakeholders might be already expecting the miracles of technology to manifest, and there can be less appetite for continuing the journey towards cloud-native modernizations.
+It's probably something not done massively anymore in 2024, unless you are still closing datacenters , or perhaps incorporating new pieces after an M&A deal, and it is the less mature option in a cloud journey. It can also be a trap from which it is difficult to move out later. Once you are in ["the cloud"](https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-145.pdf), business stakeholders might be already expecting the miracles of technology to manifest, and there can be less appetite for continuing the journey towards cloud-native modernizations.
 
 To sum up:
 - Minimal immediate skill transformation needed, especially if a vendor is handholding you
@@ -41,13 +78,16 @@ To sum up:
 - Potential for future optimization, which alternatively means limited immediate cloud-native benefits are obtained
 - May introduce some sort of complacency or reluctance to move forward in the cloud journey for those applications that merit it - applications that are thus migrated tend to remain and linger in that state for too long if they seem to "just work", especially in large portfolios
 - Constraints include higher long-term operational costs
-- Limited immediate cloud-native benefits, which can mean missing strategic value
-- Be sure to assess the long-term costs of running a large IaaS footprint.
+- Limited immediate cloud-native benefits, which can mean missing strategic value, or
+- Continued challenges in achieving operational efficiencies
+- Be sure to assess the long-term costs of running a large IaaS footprint
+
+Starting small with the classic "low-hanging fruit" approach is a sensible way to ensure early wins and build organizational confidence, and probably applies to almost, if not all, strategies here. 
 
 ### Re-platform (Lift, Tinker, and Shift)
 A middle-ground strategy where applications are migrated with some cloud optimization but without complete redesign, think for example moving only some parts of the systems that are clear-cut and not tangled in a web of dependencies (admittedly rare, but could be the case), ancillary services, or new requirements that could be implemented as a separate piece instead of adding to the monolith you already have. This might also involve modernizing a tier to leverage some cloud capabilities, such as migrating to a managed database offering or implementing basic auto-scaling, with minor modification to your codebase, such as removing or relocating persistent user state or sessions. Or, alternative, moving only some part of the application, some clear-cut service, component or integration that is easier to carve out. A tool like [Independent Service Heuristics](https://github.com/TeamTopologies/Independent-Service-Heuristics) can be helpful here to identify candidates, as well as specific domain knowledge. 
 
-This migration option is suitable for key parts of the portfolio where reaping cloud benefits in an incremental while removing the risk (or the impossibility) of a full re-architecture, where such a thing is not warranted. As with most of the other options, a technical feasibility assessment should be done to find out if this is the right option and how far to go with the modernization. Pros of this option include performance improvements, albeit probably moderate, some cost or operational optimization, and reduced migration complexity avoiding riskier choices. Cons include incomplete cloud-native transformation and potential ongoing performance limitations.
+This migration option is suitable for key parts of the portfolio where reaping cloud benefits in an incremental while removing the risk (or the impossibility) of a full re-architecture, where such a thing is not warranted. As with most of the other options, a technical feasibility assessment should be done to find out if this is the right option and how far to go with the modernization. Pros of this option include performance improvements, albeit probably moderate, some cost or operational optimization, and reduced migration complexity avoiding riskier choices. Cons include incomplete cloud-native transformation and potential ongoing performance limitations. PaaS services like Azure App Service or Google Cloud’s serverless offerings to enhance applications without full redesign, although it will be unlikely you can move to a PaaS offering with no modifications either. 
 
 Presents more moderate organizational risks:
 - Enables faster wins for operational improvements while postponing full transformation
@@ -64,7 +104,7 @@ Presents more moderate organizational risks:
 ### Refactor/Re-architecture
 A comprehensive transformation where applications are significantly redesigned to fully leverage cloud-native architectures, typically involving microservices, containerization, and serverless technologies. Best for mission-critical applications where performance, scalability, and innovation are paramount. Pros include maximum cloud efficiency, enhanced performance, improved scalability, and future-proofing. Cons include high complexity, substantial time investment, significant expertise requirements, and potentially high transformation costs and risks.
 
-A close second in risk profile, with critical organizational challenges:
+A close second in risk profile, with critical organizational challenges such as:
 - Requires extensive retraining of existing development teams, including building more sophisticated skills like domain-driven design (DDD) for effective decomposition of legacy applications (or you need to resort to specialized consulting)
 - Substantial cultural resistance to fundamental architectural changes
 - High likelihood of introducing new technical debt while attempting to eliminate old debt - seen this happening a few times in spites of continuous assurances and promises (incidentally this is not specific to the cloud per se)
@@ -97,6 +137,7 @@ Lowest organizational risk:
 - Potential cost savings
 - Risks include potential loss of legacy functionality, especially if there are dark corners of undocumented functionality that no one knows anymore about and that could impact workflows in legacy systems with low utilization. Apply the "pull the plug and listen for the shouting and swearing" principle (aka perform impact assessment)
 - Again, there might be some people clinging to those systems for justification
+- Disarm politically motivated stakeholders by having data that clearly identifies underutilized applications or legacy systems with limited business value
 
 ### Retain
 Keeping certain applications in their current environment, either due to compliance requirements, recent upgrades, or technical constraints. This might involve postponing migration or maintaining a hybrid infrastructure. Perhaps it is not worthy, not feasible or sunset is expected to happen soon (although I've seen systems that have survived their roadmapped decommissions for years). Appropriate for highly specialized applications, those with complex dependencies (think Team Topologies' [complicated subsystems](https://teamtopologies.com/key-concepts) and beyond), systems with recent significant investments, or situation where risk, cost and timelines are too high (let the next C*O eat that one). Technology availability could eventually become a killer, though. Pros include minimal immediate disruption and preservation of recent technology investments - or even further amortization. Cons include missed cloud benefits, potential increased complexity in managing hybrid environments, and potential long-term inefficiencies.
@@ -112,6 +153,7 @@ Low organizational risk, with some caveats:
 - Keep an eye on possible growing operational costs
 - Requires management of threatened stakeholders and their turfs, evaluate that and have a communication strategy ready and a clean way forward, or out, for those stakeholders
 - Some sort of eventual way out must be in place ... eventually
+- If for specific reasons this is not possible, consider how you can address the operational complexity of maintaining hybrid environments through automation, integration and/or APIs.
 
 ### Rebuild
 A comprehensive strategy involving complete application reconstruction using cloud-native technologies and modern development approaches. Most suitable for legacy applications that are fundamentally incompatible with cloud environments or require complete modernization. Pros include maximum technological flexibility, opportunity to incorporate latest architectural patterns, and potential for significant performance improvements. Cons include extremely high transformation costs, extended development timelines, and substantial organizational disruption. 
@@ -128,6 +170,7 @@ This strategy carries the highest organizational risk due to its comprehensive n
 - Nice opportunity to score some ESG points with your audience & investors and introduce green computing practices and a more sustainable or leaner architecture and cloud offerings
 - Requires focus on change management, communication and phased development to maintain organizational confidence and drive
 - Inherent increased complexity of distributed systems
+- Don't fall for a waterfall approach here, agile and iterative development methodologies will be better choices when it comes to managing the complexities of large-scale rebuilds​ (although those do not remove the risks, obviously)
 
 ### Replace
 Involves substituting existing applications with entirely new solutions that better meet business requirements. This might mean changing vendors or developing new custom applications (not the same as rebuild) that are more aligned with current business needs. Ideal for scenarios where existing applications are severely limited or where business processes have significantly evolved. Pros include opportunity for radical improvement, potential cost savings, alignment with current business strategies and breaking up with ballast from the past when justified. Cons include potential high initial investment, risk of business disruption, and challenges in data migration and user adaptation. Data migration, user training, and change management are things you will also need to consider here, as in the other strategies too. 
@@ -145,15 +188,18 @@ Necessarily basic...
 ## Considerations
 To successfully navigate these migration approaches, organizations should consider the following
 
-1. Develop a robust cloud & architecture competency centers
-2. Invest heavily in continuous skills training
-3. Create detailed migration roadmaps with clear exit criteria and milestones
-4. Implement phased migration approaches
-5. Establish strong governance and (possibly) architectural review boards, although I have mixed feelings about those for their obvious limitations in knowledge and reach. I guess it depends on the type of organization and its maturity levels. 
-6. Develop comprehensive change management programs
-7. Create fallback and rollback mechanisms
-8. Maintain open communication channels across IT and business units
-9. Have KPIs and metrics in order to build data-driven decision making as opposed to opinions, intuition and hand-waving 
+- Develop a robust cloud & architecture competency centers. This entails a series of question around the organization of IT and product and platform teams. This is no simple topic, and I recommend you read books such as [Team Topologies](https://www.goodreads.com/book/show/44135420-team-topologies) or [Agile IT Organization Design](https://www.goodreads.com/book/show/23616091-agile-it-organization-design) or learn from methodologies such as [unFIX](https://unfix.com/)
+- Create detailed migration roadmaps with clear exit criteria and milestones
+- Invest heavily in continuous skills training
+- Implement phased migration approaches
+- Establish strong governance and (possibly) architectural review boards, although I have mixed feelings about those for their obvious limitations in knowledge and reach. I guess it depends on the type of organization and its maturity levels. 
+- Develop comprehensive change management programs
+- Create fallback and rollback mechanisms
+- Maintain open communication channels across IT and business units
+- Have KPIs and metrics in order to build data-driven decision making as opposed to opinions, intuition and hand-waving 
+- Make sure you always have data driving the decisions, not only for founded decision making but also for effectively managing stakeholders and navigating political interests or challenges 
+- Consider what is your approach and policy for Infrastructure as Code, what will your policies be?
+- Out of the scope of this article, but think that you will also need to adapt your current deployment pipelines from on-prem to the chosen strategy
 
 In all cases, a viewpoint beyond the immediate and the tactical is needed in order to:
 
@@ -174,6 +220,7 @@ __Build Key Organizational Capabilities for Successful Migration__:
 - Risk management maturity
 
 Most organizations should start with Rehost or Re-Platform strategies to build cloud migration experience, then progressively move to more complex strategies like Refactor or Rebuild as organizational cloud maturity increases.
+
 
 
 ## A note on Cloud Repatriation
@@ -262,3 +309,9 @@ Consider the below if you are thinking Repatriation. Examine what other companie
 
 
 Cloud repatriation represents a mature technological strategy that recognizes no single infrastructure approach fits all scenarios. It's a nuanced response to the simplified one-size-fits-all cloud migration narrative based on data and contextual technological decision-making. The most sophisticated organizations view infrastructure as a strategic portfolio, dynamically balancing cloud, on-premises, and edge computing based on specific workload characteristics and organizational objectives.
+
+## Further reading
+
+- [Cloud Migration & Modernization Development Playbook](https://www.cloudchampion.at/wp-content/uploads/2019/04/Cloud-Migration-and-Modernization-Playbook-072518.pdf)
+- [Systematic Cloud Migration: A Hands-On Guide to Architecture, Design, and Technical Implementation](https://www.goodreads.com/book/show/58400211-systematic-cloud-migration)
+- [A Practical Guide to Cloud Migration](https://static.googleusercontent.com/media/sre.google/en//static/pdf/practical-guide-to-cloud-migration.pdf)
