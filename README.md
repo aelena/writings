@@ -17,3 +17,4 @@ In no particular order
 - [Notes on the book, The Nvidia way](./notes-nvidia-way.md)
 - [Notes on Cloud Migration Strategies](./cloud-migrations.md)
 - [An overview of the Theory of Constraints](./toc-overview.md)
+- [Dickerson’s Hierarchy of Reliability](./dickerson.md)
