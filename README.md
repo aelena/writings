@@ -18,3 +18,4 @@ In no particular order
 - [Notes on Cloud Migration Strategies](./cloud-migrations.md)
 - [An overview of the Theory of Constraints](./toc-overview.md)
 - [Dickerson’s Hierarchy of Reliability](./dickerson.md)
+- [Guide for the Corporate Survivalist](./ai-survival-tactics.md)
