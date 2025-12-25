@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 Large language models are becoming a structural piece embedded deep in real systems: internal copilots, document-processing pipelines, customer support flows, and compliance-heavy review tools, often beneath the surface for common users. In these settings, prompts are increasingly no longer casual throwaway strings, but are becoming productive assets and intellectual property. Critical infrastructure that determine what the model is allowed to do, how it should reason, and what shape its outputs must take. Yet most users and organizations still have not caught up to this fact yet and rely on long, loosely structured prose prompts that often imprecisely and vaguely mix instructions, data, constraints, and formatting hints into a single blob. This works tolerably well in early experiments, low value processes or casual individual use, but it fails unpredictably as prompts grow longer, inputs become more heterogeneous, and more teams start editing the same artifacts in more high-stakes real work scenarios.
 
@@ -26,9 +26,9 @@ In ordinary prose prompts, you tend to mix:
 
 That mixture works… until it doesn't. The longer the prompt, the more likely the model is to blur boundaries, treat data as instructions, or miss constraints. XML-style tags reduce that ambiguity by introducing a consistent, parseable "envelope" around each part.
 
-This article argues that **XML-structured prompting should be treated as a software-engineering discipline**, not merely a stylistic preference—one where tag vocabulary, constraints, and output contracts become the core design interfaces for reliable LLM systems. We illustrate this thesis through concrete templates, worked examples across domains, and a framework (tag vocabulary–constraints–output contract) that can be standardized and reused across teams. We then discuss operational implications: how this pattern scales from one-off prompts to platform-wide standards, integrates with validation and testing, enables audit trails for regulated environments, and lets organizations move from "tweaking prompts" to "governing prompt behavior."
+This guide argues that **XML-structured prompting should be treated as a software-engineering discipline**, not merely a stylistic preference—one where tag vocabulary, constraints, and output contracts become the core design interfaces for reliable LLM systems. We illustrate this thesis through concrete templates, worked examples across domains, and a framework (tag vocabulary–constraints–output contract) that can be standardized and reused across teams. We then discuss operational implications: how this pattern scales from one-off prompts to platform-wide standards, integrates with validation and testing, enables audit trails for regulated environments, and lets organizations move from "tweaking prompts" to "governing prompt behavior."
 
-### Where it sits
+## Where it sits
 
 ```text
 ┌─────────────────────────────────────────────────────────────┐
@@ -55,7 +55,21 @@ It pairs with:
 -   **Guardrails**  (all layers): rules that are non-negotiable.
 -   **Prompt templates**  (all layers): parametrization and reuse.
 
-## The core idea
+---
+
+## About this guide
+
+This guide will not only explain the technique in detail but will also propose a conceptual framework for XML-structured prompting built around three core elements—tag vocabulary, constraints, and output contracts—that together let teams treat prompts as stable interfaces rather than ad-hoc strings. 
+
+Secondly, there are actionable concrete, copy-pastable templates that can be dropped into production workflows with minimal modification, covering common patterns like summarization, extraction, rewriting, and RAG-style question answering.concrete, copy-pastable templates that can be dropped into production workflows with minimal modification, covering common patterns like summarization, extraction, rewriting, and RAG-style question answering.
+
+Last but not least, the guide provides clear guidance on when this pattern is the right tool—multi-document tasks, compliance-heavy flows, agentic pipelines—and when it is overkill compared to lighter alternatives such as simple templates or pure function-calling.
+
+The intended audience is technically fluent people who already work with AI systems—ML and platform engineers, technical product leads, and power users building on LLM APIs—but who have not yet systematized their prompting practices. After reading, they should be able to design a small, consistent tag vocabulary for their organization, implement at least one baseline XML-structured template for a critical workflow, and reason explicitly about the tradeoffs: when the extra structure buys reliability, auditability, and maintainability, and when a simpler prompt is sufficient.
+
+---
+
+# The core idea
 
 Treating XML-structured prompting as a mere stylistic choice misses the point. It's an  **architectural pattern**:
 
