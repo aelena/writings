@@ -1,5 +1,5 @@
 # Debug like a master programmer
-Triggered by this post and article, I thoght why not create Claude markdown files trying to imitate the style of those giants. I know, this a very poor man's way of doing it. Yet we could have these files in an specific folder of our project and step into different beast modes as required.
+Triggered by [this post](https://www.linkedin.com/posts/alexandre-zajac_i-studied-how-6-legendary-engineers-debug-activity-7431374226223349760-_HDB), I thoght why not concise create Claude markdown files trying to imitate the style of those giants. I know, this a very poor man's way of doing it. Yet we could have these files in an specific folder of our project and step into different beast modes as required.
 
 ## `skill_carmack_isolation.md`
 
