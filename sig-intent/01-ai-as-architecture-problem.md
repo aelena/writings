@@ -10,15 +10,16 @@ Effectively shipping AI is a distributed-systems problem with ML as one componen
 
 ## What the POC does not show you
 
-When you run a POC, you get to assume the nice parts. The inputs are clean, the world is reduced in its messiness and complexity, there is no [network fallacies](https://www.geeksforgeeks.org/system-design/fallacies-of-distributed-systems/), no [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem), no latency, no bad data and no integrations or deployments. The call is synchronous. There is one user — you — and there are no failure modes to handle because the one call you made worked, so ship it because "it worked on my machine."
+When you run a POC, you get to assume the nice parts. The inputs are clean, the world is reduced in its messiness and complexity, there is no [network fallacies](https://www.geeksforgeeks.org/system-design/fallacies-of-distributed-systems/), no [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem), no latency, no bad data and no integrations or deployments. The call is synchronous. There is one user, you, and there are no failure modes to handle because the one call you made worked, so ship it because "it worked on my machine."
 
 Production is the very opposite of this set of assumptions.
 
-Production has bad inputs, because real data is always worse in unpredictable ways. Production has concurrency, because you now have more than one user and some of them click twice. Production has latency budgets, because the user will abandon a feature that takes longer than their expectation of what it should cost. Production has a wide array of possible failures, because every call to a model is a network-mediated request to a stateful, throttled, regionally rate-limited third party that can and will degrade at the worst possible time. Production has a bill, because someone now adds up what each call costs and realizes the token budget and margin assumptions were wrong - or the compute, for that matter. And production has users who do adversarial things — intentionally or accidentally — because that is what users do with any interface that accepts free text.
+Production has bad inputs, because real data is always worse in unpredictable ways. Production has concurrency, because you now have more than one user and some of them click twice. Production has latency budgets, because the user will abandon a feature that takes longer than their expectation of what it should cost. Production has a wide array of possible failures, because every call to a model is a network-mediated request to a stateful, throttled, regionally rate-limited third party that can and will degrade at the worst possible time. Production has a bill, because someone now adds up what each call costs and realizes the token budget and margin assumptions were wrong - or the compute, for that matter. And production has users who do adversarial things, intentionally or accidentally, because that is what users do with any interface that accepts free text.
 
 None of those problems are model problems. All of them sit in the realm of distributed-systems problems. Every single one of them is well-known has been studied and solved in the context of service architecture for the past two decades, if not way more. The literature exists. Most AI teams are not using it because they think they are doing ML, and the ML literature does not cover it. Its focus is somewhere else. 
 
-## The actual components of a working AI feature
+## The actual components of a working AI Product
+...or significative feature
 
 Strip away the model for a moment and look at what is actually required to run one in production. You need, at minimum:
 
