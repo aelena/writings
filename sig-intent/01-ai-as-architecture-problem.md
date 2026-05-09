@@ -2,7 +2,7 @@
 
 The cheapest part of any AI feature is the model. The expensive parts are the ones people often dismiss and forgets to put in the slides or wavehands away in the discussion.
 
-I have watched this pattern play out in three different use cases in the past eighteen months. A team picks a model, runs a POC in a week, and produces a demo that makes the room nod in vague agreement. Then the demo starts moving toward production and something quietly happens. A few  months later there is no product yet, no "value realization". At best, there are unresolved tickets about data quality, retry semantics, evaluation pipelines, cost overruns, latency budgets, vendor lock-in, and a governance committee nobody invited. Most often, there is just silence.
+I have watched this pattern play out in different use cases in the past eighteen months. A team picks a model, runs a POC in a week, and produces a demo that makes the room nod in vague agreement. Then the demo starts moving toward production and something quietly happens. A few  months later there is no product yet, no "value realization". At best, there are unresolved tickets about data quality, retry semantics, evaluation pipelines, cost overruns, latency budgets, vendor lock-in, and a governance committee nobody invited. Most often, there is just silence.
 
 The failure is actually on the system around the model.
 
